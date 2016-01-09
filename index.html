@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>This is content site</title>
+</head>
+<body>
+
+<!--
+<p>Enter a number and click OK:</p>
+
+<input id="inp" type="number"  min="30">
+<button onclick="myFunction()">ok</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var iniobj = document.getElementById("inp");
+    if (iniobj.checkValidity() == false){
+        document.getElementById("demo").innerHTML = iniobj.validity.rangeunderflow;
+    }else {
+        document.getElementById("demo").innerHTML = "Input Ok";
+    }
+} 
+</script>
+-->
+<!--
+<p id="text">Hello World</p>
+<p id="demo"></p>
+<script>
+    var x = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML = "he said " + x[0].innerHTML;
+</script>
+-->
+<!--
+<p id="intro">Hello World</p>
+<p>This example demonstrates the <strong>getElementById</strong>method</p>
+<p id="demo"></p>
+<script>
+var x = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = "immo " + x[1].innerHTML;
+</script>
+-->
+
+<!--
+<p>Hello World!</p>
+
+<div id="main">
+<p>The DOM is very useful.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+</div>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+</script>
+-->
+
+<!--
+<p>Hello World!</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementsByClassName("intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script>
+-->
+<!--
+<h2 class="example">I am Header</h2>
+<p class="example">This is paragraph</p>
+<button onclick="myFunction()">Try it</button>
+<p class="example">I am second paragraph</p>
+    <script>
+        function myFunction(){
+            var x = document.querySelectorAll(".example");
+            x[2].style.backgroundColor = "red";
+        }
+    </script>
+-->
+<!--
+<h2 class="class">This is header</h2>
+<p class="class">This is paragraph</p>
+<p class="class">This is Paragraph2</p>
+<p class="class">this is paragraph3</p>
+<button onclick="myFunction()">Click me</button>
+    <script>
+        function myFunction(){
+            var x = document.querySelectorAll("h2.class");
+            x[0].style.background = "red";
+        }
+    </script>
+-->
+
+<!--
+<form id="robby">
+  <input type="button" onclick="alert(document.forms[0].id);" value="robby's form" />
+</form>
+
+<form id="dave">
+  <input type="button" onclick="alert(document.forms[1].id);" value="dave's form" />
+</form>
+
+<form id="paul">
+  <input type="button" onclick="alert(document.forms[2].id);" value="paul's form" />
+</form>
+-->
+<!--
+<form id="frm1" action="form_action.asp">
+    <input type="text" name="nam1" value="Donald"><br>
+    <input type="text" name="nam2" value="Duck"><br>
+    
+</form>
+   
+    <button onclick="myFunction()">Click Me</button>
+    <p id="demo"></p>
+<script>
+    function myFunction(){
+        var x = document.forms["frm1"];
+        var text = "";
+        var i;
+        for (i = 0; i < x.length ; i++){
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
+-->
+<!--
+<a name="html">HTML Tutorial</a><br>
+<a name="css">CSS Tutorial</a><br>
+<a name="xml">XML Tutorial</a><br>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of anchors are: " + document.anchors.length;
+</script>
+-->
+<!--
+<p id="demo"></p>
+<script>
+    //alert(document.body.innerHTML);
+    //alert(document.documentElement.innerHTML);
+    document.getElementById("demo").innerHTML = "Numbers: " + document.embeds.length;
+</script>
+-->
+<!--
+<form action="">
+    <input type="text" value="Donald" name="frame">
+    <input type="submit" value="submit">
+</form>
+-->
+<!--
+<p id="demo"></p>
+<script>
+    //document.getElementById("demo").innerHTML = "Number: " +  document.forms.length;
+    document.getElementById("demo").innerHTML = document.head;
+</script>
+-->
+<!--
+<a href="#">HTML</a>
+<a href="#">CSS</a>
+<p id="demo"></p>
+
+<script>
+//document.getElementById("demo").innerHTML =
+//"Number of images: " + document.images.length;
+    document.getElementById("demo").innerHTML = document.links.length;
+    document.getElementById("demo").innerHTML = document.scripts.length;
+    document.getElementById("demo").innerHTML = document.title;
+    
+</script>
+-->
+<!--<p id="p1">Hello World</p>-->
+<!--
+<h1 id="header">Old Header</h1>
+<script>
+    //document.write(Date());
+    //document.getElementById("p1").innerHTML = "new text";
+    var element = document.getElementById("header");
+    element.innerHTML = "New Header";
+</script>
+-->
+<!--
+<p id="p1">hello world</p>
+<p id="p2">hello world</p>
+<script>
+    document.getElementById("p2").style.color = "blue";
+    document.getElementById("p2").style.fontFamily = "Arial";
+    document.getElementById("p2").style.fontSize = "25px";
+</script>
+-->
+<!--
+<h1 id="id1">This is header</h1>
+<button type="button" onclick="document.getElementById('id1').style.color = 'red'">Click me</button>
+-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
